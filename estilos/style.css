@@ -111,13 +111,18 @@ ul > li {
 
     
     margin: 40px -30px;
-    padding: 60px 0px 80px 0px;
+    /* padding: 90px 0px 80px 0px; */
     background-color: white;
 }
 
 .container-conteudo-imagem {
     display: flex;
     justify-content: center;
+}
+
+.container-conteudo-imagem > img {
+    width: 222px;
+    margin: 60px 0px 30px 0px;
 }
 
 .container-conteudo-paragrafo {
