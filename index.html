@@ -7,20 +7,24 @@
     <title>Your Company</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="cabecalho">
         <div class="cabecalho-imagem">
             <img src="imagens/logo.png" alt="logo-company">
         </div>
         <div class="cabecalho-menu">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Contato</a>
-                <a href="#">Sobre</a>
-                <a href="#">Entrar</a>
+            <span id="navegacao" class="material-icons" onclick="clickMenu()">menu</span>
+            <nav id="menu" class="cabecalho-menu-item">
+                <ul>
+                    <li><a class="cabecalho-menu-item1" href="#">Home</a></li>
+                    <li><a class="cabecalho-menu-item2" href="#">Contato</a></li>
+                    <li><a class="cabecalho-menu-item3" href="#">Sobre</a></li>
+                    <li><a class="cabecalho-menu-item4" href="#">Entrar</a></li>
+                </ul>
             </nav>
-            <!-- <span class="material-icons">menu</span> -->
+            
         </div>
     </header>
     <main>
@@ -29,5 +33,23 @@
     <footer>
 
     </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
