@@ -109,9 +109,7 @@ ul > li {
     display: flex;
     flex-direction: column;
 
-    
     margin: 40px -30px;
-    /* padding: 90px 0px 80px 0px; */
     background-color: white;
 }
 
@@ -122,13 +120,66 @@ ul > li {
 
 .container-conteudo-imagem > img {
     width: 222px;
-    margin: 60px 0px 30px 0px;
+    padding: 60px 0px 30px 0px;
 }
 
 .container-conteudo-paragrafo {
     color: var(--cor4);
-    margin: 0px 30px 20px 30px;
+    padding: 0px 30px 20px 30px;
     font-weight: 400;
     font-size: 1.5em;
     text-align: left;
+}
+
+.container-rodape {
+    background-color: var(--cor1);
+    height: 280px;
+    margin-top: -40px;
+    padding: 20px;
+}
+
+.container-rodape-imagem > img {
+    width: 120px;
+}
+
+.container-rodape-text {
+    color: var(--cor2);
+    width: 250px;
+    padding: 10px 0px 0px 10px;
+}
+
+.container-rodape-redes-item {
+    color: var(--cor2);
+    display: flex;
+    justify-content: center;
+}
+
+#container-rodape-redes-item1,
+#container-rodape-redes-item2,
+#container-rodape-redes-item3 {
+    padding-right: 20px;
+}
+
+.container-rodape-redes-text {
+    padding: 30px 0px 20px 0px;
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--cor2);
+    font-weight: 700;
+}
+
+#container-rodape-redes-item1:hover {
+    color: rgb(0, 132, 255);
+}
+
+#container-rodape-redes-item2:hover {
+    color: rgb(0, 132, 255);
+}
+
+#container-rodape-redes-item3:hover {
+    color: rgb(0, 132, 255);
+}
+
+#container-rodape-redes-item4:hover {
+    color: rgb(0, 132, 255);
 }
