@@ -9,7 +9,21 @@ Desktop: 992px  até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
+
+
+:root {
+    --fontpadrao: 'Source Sans Pro', sans-serif;
+
+    /* Amostras de temas de cores em Hex */
+    --cor1: #4C02F1;
+    --cor2: #D8CBF4;
+    --cor3: #250075;
+    --cor4: #18014A;
+}
+
+@media screen and (min-width: 700px) /* NAV */{
     #navegacao {
         display: none;
     }
@@ -18,4 +32,151 @@ Grandes telas: acima de 1200px
         display: flex;
         flex-direction: row;
     }
+
+    .cabecalho-menu-item {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 992px){
+    #navegacao {
+        display: none;
+    }
+
+    /* CONFIGURAÇAO DA AREA DE EXIBIÇAO */
+
+    .container, .container-rodape {
+        margin: auto;
+        width: 500px;
+    }
+
+    .cabecalho-menu-item > ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho-menu-item {
+        display: block;
+    }
+
+    /* CONFIGS */
+
+    .cabecalho {
+        margin: 40px;
+    }
+
+    .cabecalho-imagem > img {
+        width: 200px;
+    }
+
+    .container-introducao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container-introducao-imagem > img {
+        width: 220px;
+    }
+
+    .container-introducao > h1 {
+        font-size: 3em;
+    }
+
+    .container-conteudo {
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.57);
+    }
+
+    .container-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-rodape-imagem > img {
+        width: 200px;
+    }
+
+    .container-rodape-text {
+        font-size: 2em;
+        width: 400px;
+        text-align: center;
+    }
+
+    .container-rodape-redes {
+        margin-bottom: 20px;
+    }
+
+    .container-rodape-redes-text {
+        font-size: 2em;
+    }
+
+    #container-rodape-redes-item1,
+    #container-rodape-redes-item2,
+    #container-rodape-redes-item3,
+    #container-rodape-redes-item4 {
+        font-size: 2.3em;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-introducao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-introducao > h1 {
+        padding-left: 8rem;
+        padding-top: 40px;
+        font-size: 4em;
+    }
+
+    .container-introducao-imagem > img {
+        width: 250px;
+    }
+
+    .container-conteudo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+
+        padding: 30px;
+    }
+
+    .container-conteudo-paragrafo {
+        font-size: 1.5em;
+        font-weight: 700;
+        width: 500px;
+    }
+
+    .container-conteudo-imagem > img {
+        width: 400px;
+    }
+
+    .container-rodape {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container-rodape-imagem > img {
+        width: 220px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
