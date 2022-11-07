@@ -179,4 +179,103 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 1200px) {
     
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+
+        margin: 30px 0px 0px 0px;
+    }
+
+    .cabecalho-menu {
+        font-size: 1.4em;
+    }
+
+    nav > ul {
+        background-color: transparent;
+    }
+
+    .cabecalho-menu-item1,
+    .cabecalho-menu-item2,
+    .cabecalho-menu-item3,
+    .cabecalho-menu-item4 {
+        color: var(--cor2);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        
+    }
+
+    .container-introducao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin: 50px 0px;
+        width: 800px;
+    }
+
+    .container-introducao > h1 {
+        font-size: 4em;
+    }
+
+    .container-introducao-imagem img {
+        width: 350px;
+    }
+
+    .container-conteudo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 70px 0px;
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.29);
+        
+        margin-bottom: 70px;
+        width: 800px;
+        padding: 40px;
+    }
+
+    .container-conteudo-imagem > img {
+        width: 350px;
+    }
+    
+    .container-conteudo-paragrafo {
+        text-align: justify;
+    }
+
+    .container-rodape {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border-top: 1px solid var(--cor3);
+    }
+
+    .container-rodape-imagem > img {
+        width: 200px;
+        
+    }
+
+    .container-rodape-imagem > p {
+        font-size: 1.5em;
+        width: 280px;
+    }
+
+    .container-rodape-redes-text {
+        font-size: 1.8em;
+    }
+
+    .container-rodape-redes-item {
+        font-size: 1.5em;
+    }
+
+    #container-rodape-redes-item1,
+    #container-rodape-redes-item2,
+    #container-rodape-redes-item3,
+    #container-rodape-redes-item4 {
+        cursor: pointer;
+    }
 }
