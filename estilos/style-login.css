@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+
+:root {
+    --fontpadrao: 'Source Sans Pro', sans-serif;
+
+    /* Amostras de temas de cores em Hex */
+    --cor1: #4C02F1;
+    --cor2: #D8CBF4;
+    --cor3: #250075;
+    --cor4: #18014A;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fontpadrao);
+}
+
+
+body {
+    background-color: var(--cor1);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cabecalho-img > img {
+    width: 150px;
+}
+
+/* MENU BURGUER ABAIXO */
+
+.cabecalho-menu-item {
+    display: none;
+}
+
+ul > li {
+    list-style-type: none;
+    display: block;
+    color: white;
+    line-height: 1.4em;
+    padding-left: 5px;
+}
+
+ul {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container-principal-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+    border-radius: 10px;
+
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+}
+
+.container-principal-login > h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 30px 0px 30px 0px;
+    color: var(--cor3);
+    position: relative;
+    top: -75px;
+}
+
+.container-imagem > img {
+    display: none;
+}
+
+.container-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 40px;
+
+    position: relative;
+    top: -80px;
+}
+
+.container-dados-user {
+    margin-bottom: 15px;
+}
+
+.container-dados input {
+    position: relative;
+    top: -4.5px;
+    left: -4.5px;
+
+    border: none;
+    outline: none;
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    height: 40px;
+    width: 200px;
+
+    cursor: pointer;
+}
+
+.container-dados input::placeholder {
+    font-family: var(--fontpadrao);
+    padding-left: 5px;
+    font-size: .8em;
+    color: rgb(189, 189, 189);
+
+}
+
+.container-dados input:focus {
+    color: white;
+    padding-left: 5px;
+}
+
+#icon-user,
+#icon-pass {
+    background-color: var(--cor4);
+    border-radius: 5px 0px 0px 5px;
+    height: 30px;
+    padding: 5px;
+}
+
+.container-dados-enviar {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -50px;
+}
+
+.container-dados-enviar > input[type="submit"] {
+    background-color: var(--cor1);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+
+    width: 230px;
+    height: 40px;
+
+    font-size: 1.3em;
+    cursor: pointer;
+
+    transform-origin: 0% 0%;
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3603a5;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+
+    transform: scale(0.98);
+    
+}
+
+.text-outros-meios-de-login {
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
+
+.meios-de-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+#meios-de-login1,
+#meios-de-login2 {
+    padding-right: 10px;
+    font-size: 1.5em;
+    color: var(--cor3);
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+#meios-de-login3 {
+    width: 25px;
+    font-size: 1.7em;
+    color: var(--cor3);
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.registre {
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
+
+.registre > a {
+    font-weight: 700;
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.registre > a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------- */
+
+.material-icons {
+    color: var(--cor2);
+    margin-top: 10px;
+}
+
+#menu-burguer {
+    font-size: 2em;
+}
+
+/* ------------------------- */
