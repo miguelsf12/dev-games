@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fontpadrao);
+}
+
 :root {
     --fontpadrao: 'Source Sans Pro', sans-serif;
 
@@ -11,6 +17,15 @@
     --cor3: #250075;
     --cor4: #18014A;
 }
+
+/* Typical Device Breakpoints
+----------------------------------------
+Pequenas telas:  até 600px
+Celular: de 600px ate 768px
+Tablet: 768px até 992px
+Desktop: 992px  até 1200px
+Grandes telas: acima de 1200px
+*/
 
 /* MENU */
 
@@ -27,3 +42,47 @@
         display: block;
     }
 }
+
+/* TELAS COM MINIMO 700px E MAX 992px */
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+    .cabecalho-menu-item {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
+    .cabecalho-menu-item > ul > li > a:hover {
+        color: rgb(214, 214, 214);
+        
+    }
+
+    .container-imagem {
+        display: block;
+
+        width: 35%;
+        margin: auto;
+    }
+
+    .container-imagem > img {
+        height: 572px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .container-principal-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    #login {
+        width: 50%;
+        height: 50vh;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+

@@ -69,6 +69,19 @@ Grandes telas: acima de 1200px
         width: 200px;
     }
 
+    nav > ul {
+        background-color: transparent;
+    }
+
+    .cabecalho-menu-item1,
+    .cabecalho-menu-item2,
+    .cabecalho-menu-item3,
+    .cabecalho-menu-item4 {
+        color: white;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
     .container-introducao {
         display: flex;
         flex-direction: row;
@@ -126,6 +139,18 @@ Grandes telas: acima de 1200px
     .cabecalho {
         display: flex;
         justify-content: space-around;
+    }
+
+    nav > ul {
+        background-color: transparent;
+    }
+
+    .cabecalho-menu-item1,
+    .cabecalho-menu-item2,
+    .cabecalho-menu-item3,
+    .cabecalho-menu-item4 {
+        color: white;
+        font-weight: 700;
     }
 
     .container-introducao {
@@ -198,7 +223,8 @@ Grandes telas: acima de 1200px
     .cabecalho-menu-item2,
     .cabecalho-menu-item3,
     .cabecalho-menu-item4 {
-        color: var(--cor2);
+        color: white;
+        font-weight: 700;
     }
 
     .container {

@@ -22,9 +22,9 @@
         
             <nav id="menu" class="cabecalho-menu-item">
                 <ul>
-                    <li>Home</li>
-                    <li>Contato</li>
-                    <li>Meu perfil <!--QUERO COLOCAR UM ICONE--></li>
+                    <li><a href="index.html" rel="prev" target="_self">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Meu perfil</a> <!--QUERO COLOCAR UM ICONE--></li>
                 </ul>
             </nav>
         </div>
@@ -34,37 +34,34 @@
 
     <main class="container-principal-login">
         <div class="container-imagem">
-            <img src="imagens/pattern.jpg" alt="">
+            <img src="imagens/pattern1.jpg" alt="pattern">
         </div>
-
-        <h1>Entrar</h1>
-
-        <div class="container-dados">
-            <div class="container-dados-user">
-                <label for="idusuario"><span id="icon-user" class="material-icons">person_outline</span></label>
-                <input type="text" name="usuario" id="idusuario" required autocomplete="current-password" placeholder="Digite seu usuário.">
+        
+        <div id="login">
+            <h1 class="login-entrar">Entrar</h1>
+            <div class="container-dados">
+                <div class="container-dados-user">
+                    <label for="idusuario"><span id="icon-user" class="material-icons">person_outline</span></label>
+                    <input type="text" name="usuario" id="idusuario" required autocomplete="current-password" placeholder="Digite seu usuário.">
+                </div>
+                <div class="container-dados-senha">
+                    <label for="idsenha"><span id="icon-pass" class="material-icons">lock</span></label>
+                    <input type="password" name="senha" id="idsenha" required autocomplete="username" placeholder="Digite sua senha.">
+                </div>
             </div>
-
-            <div class="container-dados-senha">
-                <label for="idsenha"><span id="icon-pass" class="material-icons">lock</span></label>
-                <input type="password" name="senha" id="idsenha" required autocomplete="username" placeholder="Digite sua senha.">
+            <div class="container-dados-enviar">
+                <input type="submit" value="LOGIN">
             </div>
-
+            <p class="redefinir-senha"><a href="#">esqueci a senha</a></p>
+            <p class="outros">outros meios de login</p>
+            <div class="meios-de-login">
+                <a href="#"><i id="meios-de-login1" class="fa-brands fa-google"></i></a>
+                <a href="#"><i id="meios-de-login2" class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i id="meios-de-login3" class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="registre">Não possui uma conta? <br>
+                Registre-se <a href="#">aqui</a></p>
         </div>
-
-        <div class="container-dados-enviar">
-            <input type="submit" value="LOGIN">
-        </div>
-        <p class="redefinir-senha"><a href="#">esqueci a senha</a></p>
-
-        <p class="outros">outros meios de login</p>
-        <div class="meios-de-login">
-            <a href="#"><i id="meios-de-login1" class="fa-brands fa-google"></i></a>
-            <a href="#"><i id="meios-de-login2" class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i id="meios-de-login3" class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <p class="registre">Não possui uma conta? <br>
-            Registre-se <a href="#">aqui</a></p>
     </main>
     <script src="index.js"></script>
 </body>
