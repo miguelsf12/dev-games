@@ -67,6 +67,8 @@ ul {
     width: 90%;
     height: 80vh;
     margin: auto;
+
+    overflow: hidden;
 }
 
 .container-principal-login > h1 {
