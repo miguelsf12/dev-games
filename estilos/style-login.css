@@ -135,7 +135,7 @@ ul {
     justify-content: center;
 
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .container-dados-enviar > input[type="submit"] {
@@ -165,7 +165,23 @@ input[type="submit"]:hover {
     
 }
 
-.text-outros-meios-de-login {
+.redefinir-senha {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.redefinir-senha > a {
+    text-decoration: none;
+    color:  rgb(109, 109, 109);
+}
+
+.redefinir-senha > a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+.outros {
     text-align: center;
     color: rgb(109, 109, 109);
 }
