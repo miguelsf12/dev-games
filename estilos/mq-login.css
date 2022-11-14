@@ -46,6 +46,12 @@ Grandes telas: acima de 1200px
 /* TELAS COM MINIMO 700px E MAX 992px */
 
 @media screen and (min-width: 700px) and (max-width: 992px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .cabecalho-menu-item {
         font-size: 1.3em;
         font-weight: 700;
@@ -59,17 +65,45 @@ Grandes telas: acima de 1200px
     .container-imagem {
         display: block;
 
-        width: 35%;
+        height: 513px;
         margin: auto;
     }
 
     .container-imagem > img {
-        height: 572px;
+        margin: auto;
+
+        width: 382px;
+        height: 513px;
 
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
 
         border-radius: 10px 0px 0px 10px;
+    }
+
+    .container-principal-login {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    #login {
+        width: 330px;
+        height: 513px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 1.3em;
     }
 
     .container-principal-login {
@@ -78,11 +112,62 @@ Grandes telas: acima de 1200px
         align-items: center;
     }
 
+    .container-imagem {
+            display: block;
+            height: 457px;
+    }
+
+    .container-imagem > img {
+        /* width: 343px; */
+        height: 456px;
+
+        border-radius: 10px 0px 0px 10px;
+    }
 
     #login {
-        width: 50%;
-        height: 50vh;
         border-radius: 0px 10px 10px 0px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        height: 100vh;
+        background-image: linear-gradient(-105deg, #4C02F1, #310392, #0c0125);
+    }
+    
+
+    .cabecalho-menu-item {
+        font-size: 1.3em;
+    }
+
+    .container-principal-login {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-imagem {
+        display: block;
+        height: 456px;
+    }
+
+    .container-imagem > img {
+        height: 456px;
+
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #login {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+
 

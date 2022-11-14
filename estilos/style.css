@@ -56,6 +56,27 @@ ul > li {
     padding: 10px;
 }
 
+ul > li > a {
+    position: relative;
+}
+
+ul > li > a::after {
+    content: " ";
+    background-color: white;
+    width: 0%;
+    height: 3px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    transition: 0.5s ease-in-out;
+}
+
+ul > li > a:hover::after {
+    width: 100%;
+}
+
 .cabecalho-menu-item {
     display: none;
 }
