@@ -65,32 +65,25 @@ Grandes telas: acima de 1200px
     .container-imagem {
         display: block;
 
-        height: 513px;
+        height: 50vh;
         margin: auto;
     }
 
     .container-imagem > img {
-        margin: auto;
-
         width: 382px;
-        height: 513px;
-
-        background-repeat: no-repeat;
-        background-size: cover;
-
+        height: 100%;
         border-radius: 10px 0px 0px 10px;
     }
 
     .container-principal-login {
         display: flex;
         flex-direction: row;
-
     }
 
 
     #login {
         width: 330px;
-        height: 513px;
+        height: 50vh;
         border-radius: 0px 10px 10px 0px;
     }
 }
@@ -113,18 +106,20 @@ Grandes telas: acima de 1200px
     }
 
     .container-imagem {
-            display: block;
-            height: 457px;
+        display: block;
+        height: 50vh;
     }
 
     .container-imagem > img {
-        /* width: 343px; */
-        height: 456px;
+        width: 440px;
+        height: 100%;
 
         border-radius: 10px 0px 0px 10px;
     }
 
     #login {
+        width: 420px;
+        height: 50vh;
         border-radius: 0px 10px 10px 0px;
     }
 }
@@ -155,17 +150,39 @@ Grandes telas: acima de 1200px
     
     .container-imagem {
         display: block;
-        height: 456px;
+        height: 80vh;
+
+        border-radius: 0px 10px 10px 0px;
+
     }
 
     .container-imagem > img {
-        height: 456px;
+        width: 480px;
+        height: 100%;
 
         border-radius: 10px 0px 0px 10px;
     }
 
     #login {
+        width: 500px;
+        height: 80vh;
         border-radius: 0px 10px 10px 0px;
+    }
+
+    .login-entrar {
+        font-size: 5em;    
+    }
+
+    .container-dados-user > input {
+        width: 270px;
+    }
+
+    .container-dados-senha > input {
+        width: 270px;
+    }
+
+    .container-dados-enviar > input[type="submit"] {
+        width: 300px;
     }
 }
 
