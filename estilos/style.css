@@ -83,13 +83,14 @@ ul > li > a:hover::after {
 
 .cabecalho-menu-item1,
 .cabecalho-menu-item2,
-.cabecalho-menu-item3 {
+.cabecalho-menu-item3,
+.cabecalho-menu-item4 {
     color: var(--cor4);
     padding-right: 10px;
     text-decoration: none;
 }
 
-.cabecalho-menu-item4 {
+.cabecalho-menu-item5 {
     color: var(--cor4);
     text-decoration: none;
 }

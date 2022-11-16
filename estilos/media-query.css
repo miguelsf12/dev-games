@@ -76,7 +76,8 @@ Grandes telas: acima de 1200px
     .cabecalho-menu-item1,
     .cabecalho-menu-item2,
     .cabecalho-menu-item3,
-    .cabecalho-menu-item4 {
+    .cabecalho-menu-item4,
+    .cabecalho-menu-item5 {
         color: white;
         font-size: 1.3em;
         font-weight: 700;
@@ -148,7 +149,8 @@ Grandes telas: acima de 1200px
     .cabecalho-menu-item1,
     .cabecalho-menu-item2,
     .cabecalho-menu-item3,
-    .cabecalho-menu-item4 {
+    .cabecalho-menu-item4,
+    .cabecalho-menu-item5 {
         color: white;
         font-weight: 700;
     }
@@ -222,7 +224,8 @@ Grandes telas: acima de 1200px
     .cabecalho-menu-item1,
     .cabecalho-menu-item2,
     .cabecalho-menu-item3,
-    .cabecalho-menu-item4 {
+    .cabecalho-menu-item4,
+    .cabecalho-menu-item5 {
         color: white;
         font-weight: 700;
     }
