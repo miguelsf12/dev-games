@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="stylesheet" href="estilo/style-cadastro.css">
+    <link rel="stylesheet" href="estilo/mq-cadastro.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/42e37b94f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <main>
+        <h1 class="titulo-cadastro">
+            Crie sua conta!
+        </h1>
+
+        <div class="form">
+            <form class="form-cadastro" action="#" method="post" autocomplete="on">
+                <div class="dados-user">
+                    <label for="idusuario">Nome</label>
+                    <input type="text" name="usuario" id="idusuario" required autocomplete="username">
+                </div>
+
+                <div class="dados-email">
+                    <label for="idemail">E-mail</label>
+                    <input type="email" name="email" id="idemail" required autocomplete="email">
+                </div>
+
+                <div class="dados-password">
+                    <label for="idsenha">Senha</label>
+                    <input type="password" name="senha" id="idsenha" required autocomplete="new-password" minlength="5" maxlength="12">
+                </div>
+
+                <div class="login">
+                    <input type="submit" value="Criar">
+                </div>
+            </form>
+        </div>
+        
+        <div class="metodos-de-cadastro">
+            <div class="metodos-text">
+                <p>Outros métodos de cadastro</p>
+            </div>
+            <div class="m-redes-cadastro">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
