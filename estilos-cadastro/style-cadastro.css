@@ -26,13 +26,16 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    padding-top: 30%;
-    background-color: rgba(221, 221, 221, 0.356);
+    width: 100vw;
+    height: 100vh;
+
+    background-color: white;
 }
+
 
 .titulo-cadastro {
     font-size: 2em;
@@ -58,5 +61,6 @@ main {
 }
 
 .dados-user > input {
+    
     width: 250px;
 }
