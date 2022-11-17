@@ -104,6 +104,7 @@ main {
 
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .linha {
